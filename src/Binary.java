@@ -15,19 +15,12 @@ public class Binary {
     static void bin(){
 
         String str = enter();
-        int bin = Integer.parseInt(str, 2);
-        System.out.println("Your number Integer: " + bin);
-    }
-
-
-    static void bin2() {
         try {
-            Binary.bin();
+           int bin = Integer.parseInt(str, 2);
+            System.out.println("Your number Integer: " + bin);
         } catch (NumberFormatException exc) {
             System.err.println("Introduced non-binary format");
         }
     }
-
-
 
 }
