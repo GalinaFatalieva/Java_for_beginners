@@ -2,6 +2,9 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ArithmeticOperations {
+    private static double x;
+    private static double y;
+    private static double z;
 
 /*  1. Ввод трех чисел с клавиатуры x, y, z
     2. Нахождение и вывод на экран среднего арифметического чисел x, y, z
@@ -10,13 +13,20 @@ public class ArithmeticOperations {
 
     static double[] enter() {
 
+        try {
         Scanner in = new Scanner(System.in);
         System.out.print("\nВведите x: ");
-        double x = in.nextDouble();
+        x = in.nextDouble();
         System.out.print("Введите y: ");
-        double y = in.nextDouble();
+        y = in.nextDouble();
         System.out.print("Введите z: ");
-        double z = in.nextDouble();
+        z = in.nextDouble();
+
+        } catch (InputMismatchException exc) {
+            System.err.println("Не верный ввод значений. Вводите только цифры. Используйте запятую, как разделитель между целой и дробной частью.");
+            System.exit(0);
+        }
+
 
         return new double[] {x, y, z};
     }
