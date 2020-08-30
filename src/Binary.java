@@ -20,6 +20,13 @@ public class Binary {
     }
 
 
+    static void bin2() {
+        try {
+            Binary.bin();
+        } catch (NumberFormatException exc) {
+            System.err.println("Introduced non-binary format");
+        }
+    }
 
 
 

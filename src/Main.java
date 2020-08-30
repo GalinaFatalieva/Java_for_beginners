@@ -1,6 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        MultTable.table();
+
+        Binary.bin2();
     }
 }
