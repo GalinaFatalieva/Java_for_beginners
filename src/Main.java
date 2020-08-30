@@ -2,7 +2,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ArithmeticOperations.output();
+        Сonstant.comparisons();
+
 
     }
 }
