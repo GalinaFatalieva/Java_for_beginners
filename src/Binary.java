@@ -9,18 +9,14 @@ public class Binary {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter a number in binary format: ");
         String str = in.nextLine();
-
-
         return str;
     }
 
     static void bin(){
 
         String str = enter();
-
         int bin = Integer.parseInt(str, 2);
         System.out.println("Your number Integer: " + bin);
-
     }
 
 
