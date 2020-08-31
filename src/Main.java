@@ -6,10 +6,12 @@ public class Main {
 
 
         try {
-        Array.output();
-        } catch (InputMismatchException | NegativeArraySizeException exc ) {
+            Matrix.output();
+        } catch (InputMismatchException | NegativeArraySizeException | ExceptionInInitializerError exc ) {
             System.err.println("Не верный ввод значений. Вводите только положительные цифры без дробной части");
             System.exit(0);
+        } catch (NumberFormatException ex ) {
+            System.err.println("Не верный ввод значений. Вводите только цифры без дробной части");
         }
 
     }
