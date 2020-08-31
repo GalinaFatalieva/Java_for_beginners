@@ -4,7 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        StringComparison.comparison();
+        try {
+            TypeСonversion.conversion();
+        } catch (NumberFormatException exc){
+            System.err.println("Введите число без дробной части");
+        }
 
     }
 }
