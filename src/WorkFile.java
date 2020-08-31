@@ -12,7 +12,7 @@ public class WorkFile {
         int i = 0;
 
         try (
-                BufferedReader br1 = new BufferedReader (new FileReader("C:\\Users\\user\\Desktop\\Java_for_beginners\\src\\fileWork.txt"))) {
+                BufferedReader br1 = new BufferedReader (new FileReader("src\\fileWork.txt"))) {
             while ((s = br1.readLine()) != null){
                 System.out.println(s);
                 i++;
@@ -25,7 +25,7 @@ public class WorkFile {
         String str;
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        try (FileWriter fw = new FileWriter("C:\\Users\\user\\Desktop\\Java_for_beginners\\src\\fileWork.txt")) {
+        try (FileWriter fw = new FileWriter("src\\fileWork.txt")) {
 
             int j = 0;
             do {

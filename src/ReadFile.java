@@ -12,7 +12,7 @@ public class ReadFile {
         String s;
 
         try (
-            BufferedReader br = new BufferedReader (new FileReader("C:\\Users\\user\\Desktop\\Java_for_beginners\\src\\fileR.txt"))) {
+            BufferedReader br = new BufferedReader (new FileReader("src\\fileR.txt"))) {
             while ((s = br.readLine()) != null){
                 System.out.println(s);
             }

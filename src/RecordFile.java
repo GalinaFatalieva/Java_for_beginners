@@ -15,7 +15,7 @@ public class RecordFile {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Остановить запись 'stop' ");
 
-        try (FileWriter fw = new FileWriter("C:\\Users\\user\\Desktop\\Java_for_beginners\\src\\fileW.txt")) {
+        try (FileWriter fw = new FileWriter("src\\fileW.txt")) {
         do {
             System.out.print("пишите: ");
             str = br.readLine();
