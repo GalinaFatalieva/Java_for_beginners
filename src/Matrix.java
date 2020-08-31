@@ -12,7 +12,7 @@ public class Matrix {
         Scanner in = new Scanner(System.in);
         System.out.print("\nРазмер матрицы по вертикале: ");
         int y = in.nextInt();
-        System.out.print("Размер матрицы по горизонтале: ");
+        System.out.print("Размер матрицы по горизонтали: ");
         int x = in.nextInt();
 
 
