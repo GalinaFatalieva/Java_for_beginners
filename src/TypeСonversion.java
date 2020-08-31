@@ -10,6 +10,7 @@ public class TypeСonversion {
 
     static String input(){
 
+
         Scanner in = new Scanner(System.in);
         System.out.print("\nВведите число: ");
         String s = in.nextLine();
@@ -19,6 +20,7 @@ public class TypeСonversion {
 
     static void conversion() {
 
+        try {
         String s = input();
         int x = Integer.parseInt (s);
         double y = (double) x;
@@ -26,6 +28,9 @@ public class TypeСonversion {
         System.out.println("s = " + s);
         System.out.println("x = " + x);
         System.out.println("y = " + y);
+        } catch (NumberFormatException exc){
+            System.err.println("Введите число без дробной части");
+        }
     }
 
 }
