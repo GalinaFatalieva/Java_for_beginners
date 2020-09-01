@@ -37,6 +37,11 @@ public class FinalTask {
             for (int i =0; i < chArray.length; i++) {
 
                 dArray[i] = Double.parseDouble(Character.toString(chArray[i]));
+
+                if (dArray[i] != 0 && dArray[i] != 1) {
+                    System.err.println("Веденно число не в бинарном формате");
+                    System.exit(0);
+                }
             }
         } catch (NumberFormatException exc) {
                 System.err.println("Не верный формат");
